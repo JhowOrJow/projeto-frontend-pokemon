@@ -1,0 +1,206 @@
+body{
+    
+    font-family: 'Poppins',sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+    border: 1.5px solid #000000f9;
+    border-radius: 15px;
+    margin-top: 15px;
+   
+}
+
+body.modo-escuro{
+
+    background-color: #3a3a3a;
+    color: #797777;
+    border: 1.5px solid #fffffff9;
+    border-radius: 15px;
+    margin-top: 15px;
+
+}
+
+header{
+
+    background-color: #00eaff;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid #0a0a0af9;
+    border-radius: 15px;
+   
+}
+
+header.modo-escuro{
+
+    background-color: #0c0249;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid #fffffff9;
+    border-radius: 15px;
+
+}
+
+.logo,
+.sol-botao{
+
+    width: 30px;
+    transition: 0.2s ease-in-out;
+   
+}
+header #logo-pokebola{
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+header #botao-alterar-tema{
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+header #logo-pokebola:hover,
+header #botao-alterar-tema:hover,
+.cartao-pokemon:hover{
+
+    transform:scale(1.05) ;
+    cursor: pointer;
+
+}
+
+main{
+
+    padding: 25px;
+
+}
+
+.lista-de-pokemons{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-pokemon{
+
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2 ease-in-out;
+    border: 3px solid #000000f9;
+}
+
+ .cartao-pokemon:hover{
+
+    background-color: #44b4fa;
+
+}
+
+.modo-escuro .cartao-pokemon:hover{
+
+    background-color: #44b4fa;
+    color: black;
+
+}
+
+main .cartao-pokemon .informacoes {
+
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #545454;
+    border-radius: 10px;
+
+}
+
+.cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.gif{
+
+    width: 80px;
+    height: 80px;
+    
+}
+
+.tipos{
+
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.tipo-agua, .tipo-fogo, .tipo-grama, .tipo-inseto, .tipo-veneno, .tipo-voador{
+
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #000000f9;
+    color: black;
+
+}
+
+.tipo-agua{
+
+    background-color: #00eaff;
+
+}
+
+.tipo-fogo{
+
+    background-color: rgb(255, 117, 4);
+
+
+}
+
+.tipo-grama{
+
+    background-color: rgb(150, 248, 3);
+
+}
+
+.tipo-veneno{
+
+    background-color: rgb(128, 0, 220);
+
+}
+
+.tipo-inseto{
+
+    background-color: rgb(158, 191, 59) ;
+
+}
+
+.tipo-voador{
+
+    background-color: #e0fcff;
+}
+
+main .descricao{
+
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+    
+}
+
+
+
+
+
+
